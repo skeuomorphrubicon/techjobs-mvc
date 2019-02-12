@@ -9,7 +9,7 @@
     <div class="container body-content">
         <p>View jobs by:</p>
         <ul>
-            <li th:each="action : ${actions}">
+            <li th:each="action: ${actions}">
                 <a th:href="@{'/' + ${action.key}}" th:text="${action.value}"></a>
             </li>
         </ul>
